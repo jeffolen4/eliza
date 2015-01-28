@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-2.1.3.js"></script>
+  <script src="js/eliza.js"></script>
+  <title>Eliza</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Eliza Therapist</h1>
+    <div class="row">
+      <form method="POST" id="eliza-form" action="/eliza">
+        <div class="form-group">
+          <label for="user-resp">Your response</label>
+          <input name="user-resp" id="user-resp" class="form-control" type="text">
+        </div>
+
+        <button class="btn btn-primary" id="ok-btn" type="submit">Ok</button>
+      </form>
+    </div>
+    <div class="row">
+      <h3>Conversation</h3>
+      <table class="table" id="conversation-tb">
+        <thead><tr><td>Patient</td><td>Therapist</td><tr></thead>
+        <tfoot><tr><td colspan=2 align="center">Disclaimer: Eliza is NOT a licensed therapist</td></tr></tfoot>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
